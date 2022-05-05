@@ -1,7 +1,9 @@
-
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 .header {
-  
   font-size: xx-large;
   margin-top: 60px;
   margin-bottom: 60px;
