@@ -1,14 +1,19 @@
-.Dictionary section{
-    background:whitesmoke;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgb(0 0 0/10%);
-    margin: 20px 0;
-    padding: 30px;
-    
-    
+.Dictionary section {
+  background: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgb(0 0 0/10%);
+  margin: 20px 0;
+  padding: 30px;
 }
 
-.Dictionary input{
-    border-radius: 8px;
-    width: 25%;
+.Dictionary .question {
+  margin-bottom: 17px;
+}
+
+.Dictionary input {
+  border-radius: 8px;
+  width: 40%;
+  color: #70757a;
+  font-size: 16px;
+  padding: 12px;
 }

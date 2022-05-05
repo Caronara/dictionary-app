@@ -41,8 +41,14 @@ function handlePexelsResponse(response){
   return (
     <div className="Dictionary">
       <section>
+        <div className="question">What word do you want to look up?</div>
         <form onSubmit={search}>
-          <input type="search" autoFocus onChange={handleKeywordChange}></input>
+          <input
+            type="search"
+            autoFocus
+            placeholder="Search for a word"
+            onChange={handleKeywordChange}
+          ></input>
         </form>
       </section>
       <Results results={results} />
