@@ -7,7 +7,7 @@ import "./Dictionary.css";
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
-  let [photos, setPhotos] = useState(null);
+  let [photos, setPhotos] = useState([]);
   let [response, setResponse] = useState(null);
 
   function handleDictionaryResponse(response) {
@@ -20,6 +20,7 @@ export default function Dictionary() {
   }
 
   function handleError(response) {
+    console.log(response);
     setResponse(response.response.data.message);
     setResults(null);
   }
@@ -55,7 +56,7 @@ export default function Dictionary() {
       </section>
       {results !== null ? <Results results={results} /> : null}
       {response !== null ? <section>{response}</section> : null}
-      <Photos photos={photos} />
+      {photos.length > 0 ? <Photos photos={photos} /> : null}
     </div>
   );
 }

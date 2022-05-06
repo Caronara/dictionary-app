@@ -1,12 +1,22 @@
 .App {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   max-width: 800px;
   margin: 0 auto;
+  position: relative;
+  z-index: 10000;
 }
 
 .header {
   font-size: xx-large;
+  font-weight: bold;
   margin-top: 60px;
   margin-bottom: 60px;
+  max-width: 250px;
+  display: block;
   text-align: center;
+  background: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgb(0 0 0/10%);
+  margin: 20px auto;
+  padding: 20px;
 }

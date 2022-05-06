@@ -1,6 +1,4 @@
 body {
-  background-color: blanchedalmond;
-  /* background-image: url(../public/books.jpg); */
   margin: 0;
   font-family: 'Merriweather', serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +8,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.background {
+  background-image: url(../public/books.jpg);
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.6;
+  position: fixed;
+  top: 0px;
 }
