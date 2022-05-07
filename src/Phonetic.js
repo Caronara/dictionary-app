@@ -15,11 +15,11 @@ function handleClick(event){
 
   return (
     <div className="Phonetic">
-      <span className="button">
-        <IconButton aria-label="listen" color="inherit" onClick={handleClick} >
+      
+        <IconButton className="button" aria-label="listen" color="primary" onClick={handleClick} >
           <VolumeUpIcon  />
         </IconButton>
-      </span>
+      
       <span className="text">{props.phonetic.text}</span>
     </div>
   );

@@ -3,6 +3,7 @@ import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
 import "./Dictionary.css";
+import { TextField } from "@mui/material";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
@@ -45,12 +46,14 @@ export default function Dictionary() {
       <section>
         <div className="question">What word do you want to look up?</div>
         <form onSubmit={search}>
-          <input
+          <TextField
             type="search"
             autoFocus
-            placeholder="Search for a word"
+            label="Search for a word"
+            autoComplete="off"
+            color="primary"
             onChange={handleKeywordChange}
-          ></input>
+          />
         </form>
       </section>
       {results !== null ? <Results results={results} /> : null}
