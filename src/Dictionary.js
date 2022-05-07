@@ -20,7 +20,6 @@ export default function Dictionary() {
   }
 
   function handleError(response) {
-    console.log(response);
     setResponse(response.response.data.message);
     setResults(null);
   }

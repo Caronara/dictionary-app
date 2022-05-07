@@ -1,14 +1,25 @@
 import React from "react";
 import "./Phonetic.css";
+import VolumeUpIcon from "@mui/icons-material/VolumeUp";
+import { IconButton } from "@mui/material";
+
 
 export default function Phonetic(props) {
-  console.log(props.phonetic.audio);
+  
+function handleClick(event){
+  let audio = new Audio(props.phonetic.audio);
+  return(
+     audio.play()
+  );
+}
+
   return (
     <div className="Phonetic">
-      <a href={props.phonetic.audio} target="_blank" rel="noreferrer">
-        Listen
-      </a>
-      
+      <span className="button">
+        <IconButton aria-label="listen" color="inherit" onClick={handleClick} >
+          <VolumeUpIcon  />
+        </IconButton>
+      </span>
       <span className="text">{props.phonetic.text}</span>
     </div>
   );
